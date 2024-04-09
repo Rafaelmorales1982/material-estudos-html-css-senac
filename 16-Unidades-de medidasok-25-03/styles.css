@@ -1,0 +1,21 @@
+.pixel {                    /*não depende de outro valor somente dela mesmo px mais utilizado*/
+    font-size: 40px; /*Unidade de medida absoluta  que estão nas telas celular e outros dispositivos */
+    color: red;
+}
+
+/*relativa*/
+/*Tamnho da fonte padrão é 16px*/
+.rem {             /*depende de outro valor*/
+    font-size: 1rem; /*equivale valor do padrão 16px*/ /* 2.5rem * 16 = 40px */
+    color: blueviolet;
+
+}
+/*relativa*/
+/*herda do padrão do pai que é a div como padrão é igual 16px*/
+.em {
+    font-size: 2em;/*depende de outro para funcionar*/
+    color: blue;
+}
+
+
+

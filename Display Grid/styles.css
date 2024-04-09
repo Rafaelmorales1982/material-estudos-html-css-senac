@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+}
+
+.minhadiv {
+  width: 1000px;
+  height: 400px;
+  background-color: black;
+  display: grid; /*Os itens ficam um  abaixo do outro*/
+  /* cada 1fr é uma coluna
+    2° - grid-template-columns: 1fr 1fr 1fr 1fr;  */
+   /*3° grid-template-columns: repeat(4, 1fr) ;*/
+   grid-template-columns: repeat(3, 1fr);
+   /*colocando distaciamento entre as colunas*/
+   column-gap: 10px;
+
+   /*colocando distanciamento entre as linhas*/
+   row-gap: 10px;
+}
+
+.caixa {
+  width: 100%;/*largura*/
+  height: 100%;/*altura*/
+  background-color: #fff;/*cor de fundo*/
+  border: 2px solid red;/*borda - espessura tipo da linha da borda e cor*/
+}

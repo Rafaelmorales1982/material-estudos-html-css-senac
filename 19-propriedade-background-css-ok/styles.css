@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+
+body {
+    height: 300vh;/*1°  indicando 100% da altura da tela não preciso dizer a quantidade de pixel*/
+   /* 2° height: 200vh;mostra o scroll do lado porque altura ficou maior 2x 100% */
+   width: 100vh;/*3° indicando 100% da largura da tela não preciso dizer a quantidade de pixel*/
+}
+
+.minhadiv {
+    width: 500px;
+    height: 500px;
+    /*background-color: red;
+    ou   background*/
+ /*colocando uma imagem com  background-image: url()*/
+    background-image: url("./img/batman.jpg") ;
+    /*Para imagem não repetir*/
+    background-repeat: no-repeat;
+    /*proprieda faz imagem ficar no tamanho total do container*/
+    background-size: cover;
+    /*1°valor posicionamento horinzontal e 2° valor vertical*/
+    background-position: 51% 0%;
+
+    /*background-size: auto; fica tamanho original */
+    /**/
+   /* background-size: contain; fica contida  dentro do container sem perder nada*/
+}

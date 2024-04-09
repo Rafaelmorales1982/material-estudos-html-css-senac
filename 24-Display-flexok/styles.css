@@ -1,0 +1,43 @@
+*{
+    margin: 0;/*reseta a margin*/
+}
+
+.minhadiv {/*div pai*/
+    width: 1000px;/*largura*/
+    height: 400px;/*Altura*/
+    background-color: black;/*Cor de fundo*/
+    display: flex;/*Colocando o display: flex os filhos ficam lado a lado*/
+    flex-direction: row-reverse;
+    /*
+    1° flex-direction:row ;Definir qual a direção dos nossos itens (em linha padrão)
+    2° flex-direction: row-reverse; inverte a ordem dos itens (número) e joga para o lado direito
+    3° flex-direction: column; a direção dos elementos ficam um embaixo do outro (coluna)
+    4° flex-direction: column-reverse;a direção dos elementos ficam invertidos e um embaixo  do outro (coluna)
+    */
+
+/* Manipulando nos itens horizontalmente
+   5° justify-content: flex-start;os itens posicionam no início do bloco pai
+   6° justify-content: flex-end; os itens se posicionam no final do bloco pai indo para direita
+   7° justify-content: center; centraliza horizontalmente
+   8° justify-content: space-between; separa os elementos  com espaço entre eles ao máximo
+   9° justify-content: space-around;/*Espaçamento entre os elementos e também nas laterais
+ 10°  justify-content: space-evenly;Coloca espaçamento entre os elemenyos  e na lateral esse espaçemento tem tamanho igual
+*/
+
+/*Manipulandos nossos elementos verticalmente
+11° align-items: flex-end;manipulando os nossos elementos verticalmente - os elementos ficam  na parte inferior da div
+12° align-items: flex-start; manipulando os nossos elementos verticalmente - os elementos ficam 
+ na parte superior inicial da div
+
+*/
+justify-content: space-evenly;/* coloca espaçamento igual entre os elemento*/
+align-items: center;/*manipulando os nossos elementos verticalmente - os elementos ficam  na parte central da div*/
+
+}
+
+.caixa {/*divs filhas*/
+    width: 100px;/*largura*/
+    height: 100px;/*Altura*/
+    background-color: #fff;/*Cor de fundo*/
+    border: 2px solid red;/*coloca uma borda com 1°espessura 2°linha reta e 3°cor da linha*/
+}

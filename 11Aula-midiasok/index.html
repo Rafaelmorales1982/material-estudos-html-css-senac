@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias - adicionando imagem, audio e vídeo</title>
+</head>
+<body>
+ 
+    <!--
+
+        <p>site para baixar a música em mp3 pelo link do youtube</p>
+        https://keepvid.ch/youtube-to-mp3
+    
+        <p>site para baixar a vídeos do youtube</p>
+        https://pt1.savefrom.net/
+
+    -->
+
+<hr>
+
+    <!--src é um atributo que adiciona um caminho da imagem, esse caminho é onde esta a imagem salva no computador-->
+
+<img src="./img/mais-tocadas.jpg" alt="Imagens das músicas mais tocadas 2024"  width="30%">
+<hr>
+
+
+
+<!--essa tag cria um player de vídeo com diversos controles-->
+<video controls>
+    <!--tag source src=""  -  serve para adicionar o caminho do vídeo  que será mostrado na tela-->
+    <!--tag type indentifica o tipo do vídeo-->
+<source src="./midias/Ze-Neto-Cristiano- Me-Bloqueia-Escolhas.mp4" type="video/mp4">
+
+</video>
+
+<hr>
+
+ <!--tag source src=""  -  serve para adicionar o caminho do vídeo  que será mostrado na tela-->
+<!--tag type indentifica o tipo do vídeo-->
+<audio id="player" controls>
+    <source src="./midias/Me-Bloqueia-Ao-Vivo.mp3" type="audio/mpeg">
+</audio>
+
+<!--Uma curiosidade fazer esse código se conseguir instar node js nas máquinas-->
+
+<!--tag Cria um botão play-->
+<!--onclick - clicar no botão  executa uma função JavaScript-->
+<!--getElementById('player').play() ele pega o id da tag desse jeito a música vai começar a tocar-->
+<button onclick="document.getElementById('player').play()" > Play </button>
+
+<!--tag Cria um botão pause-->
+<!--onclick - clicar no botão  executa uma função JavaScript-->
+<!--getElementById('player').pause() ele pega o id da tag e faz ela parar-->
+<button onclick="document.getElementById('player').pause() " > Pause </button>
+
+
+
+<hr>
+
+<!-- pegando um vídeo no youtube-->
+<!--Acessar youtube e escolher o vídeo-->
+<!--compartilhar-->
+<!--incorporar-->
+<!--Copiar-->
+<!--Colar aqui-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uIxl-kFVNQs?si=OXAT-Hw23wO3vRcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<hr>
+
+</body>
+</html>

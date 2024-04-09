@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+}
+
+body {
+    height: 300vh;/*1°  indicando 100% da altura da tela não preciso dizer a quantidade de pixel*/
+   /* 2° height: 200vh;mostra o scroll do lado porque altura ficou maior 2x 100% */
+   width: 100vh;/*3° indicando 100% da largura da tela não preciso dizer a quantidade de pixel*/
+}
+
+.minhadiv {
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    /*4° position: static;   fluxo normal padrão da página não muda nada */
+   /* 5° position: fixed;o elemento fica fixo (preso no lugar)*/
+   /* 6° quando utilizarmos o position nos conseguimos 
+   posicionar o elemento com
+    top, botton, right, left*/
+    /*7°
+    position: fixed;
+    top: 0px;
+    left: 200px;
+    */
+    /*8°*/
+ 
+}
+
+/*9°*/
+.minhadiv2 {
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    /* 10° position: sticky;na hora do scroll segue o fluxo normal 
+    mas quando toca no top fica grudado no topo da página*/
+    /*11° o distânciamento é da sua posição ou seja onde esta posicionado
+    ele vai para a camada da frente e pode utilizar o top para posiocionar seu elemento
+    position: relative;
+    top: 20px;*/
+
+    position: relative;
+}
+/*nos criamos div absolute dentro da minhadiv2 quando utilizamos o relative na minhadiv2
+a div absolute herda os posicionamentos dentro dessa div ou seja
+vai ser posicionada dentro dela mas se colocarmos um valor a mais ela tem liberdade
+de posicionar pois ela fica na camada da frente dos outros elementos*/
+.absolute {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}

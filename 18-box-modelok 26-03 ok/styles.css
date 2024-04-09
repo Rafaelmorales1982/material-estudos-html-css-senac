@@ -1,0 +1,61 @@
+/*Css resete*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+margin -> espaçamento externo do elemento
+padding -> espaçamento interno do elemento
+*/
+
+/*div pai*/
+.minhadiv{
+    width: 1000px;
+    height: 1000px;
+    background-color: red;
+    /*1° margin: 50px;  -> adiciona espaçamento externo
+      2° margin-top: 50px; -> adiciona espaçamento externo no topo
+      3° margin-right: 50px; -> adiciona espaçamento externo à direita
+      4° margin-left:50px; ->  adiciona espaçamento externo à esquerda
+      5° margin-bottom: 50px; -> adiciona espaçamento externo na parte inferior
+      6° margin: 20px 10px ; adiciona espaçamento externo 1° valor para cima e para baixo, 2° valor para o lado direito e lado esquerdo
+      */
+    /*7*/
+    /*cima - direira - para baixo e esquerda*/
+    /*margin: 20px 10px 20px 30px;*/
+
+    /*8° mostrar padding -> espaçamento interno no elemento */
+
+}
+/*div filho*/
+.filhodiv {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    /*1° margin: 50px;  -> adiciona espaçamento externo
+      2° margin-top: 50px; -> adiciona espaçamento externo no topo
+      3° margin-right: 50px; -> adiciona espaçamento externo à direita
+      4° margin-left:50px; ->  adiciona espaçamento externo à esquerda
+      5° margin-bottom: 50px; -> adiciona espaçamento externo na parte inferior
+      6° margin: 20px 10px ; adiciona espaçamento externo 1° valor para cima e para baixo, 2° valor para o lado direito e lado esquerdo
+      */
+    /*7*/
+    /*cima - direira - para baixo e esquerda*/
+    /*margin: 20px 10px 20px 30px;*/
+
+    /*8° mostrar padding -> espaçamento interno no elemento */
+    
+    /*9° border*/
+    /*largura - modelo da borda - cor
+     tipos de borda: solid -> linha reta
+                      double -> linhas duplas
+                      dashed -> tracejado
+                      dotted -> pontilhado
+     */
+    border:2px solid  white;
+    /*Grau de Arredondamento
+    quanto  mais arredondado, maior a curva do canto*/
+    /*usar 50% porcentagem para criar um circulo perfeito*/
+    border-radius: 10px ;
+}

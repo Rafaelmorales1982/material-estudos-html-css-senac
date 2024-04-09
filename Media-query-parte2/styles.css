@@ -1,0 +1,61 @@
+* {
+  margin: 0; /*reseta a margin*/
+}
+
+.minhadiv {
+  /*div pai*/
+  width: 100%; /*largura*/
+  height: 600px; /*Altura*/
+  background-color: black; /*Cor de fundo*/
+  display: grid;/*colocando os elementos um embaixo do outro*/
+  grid-template-columns: 1fr;/*coloca uma coluna*/
+  column-gap: 10px;/*espaçamento entre as colunas*/
+  row-gap: 10px;/*espaçamento entre as linhas*/
+
+}
+
+.bloco {
+  width: 100%;/*largura*/
+  height: 100px;/*altura*/
+  background-color: blue;/*cor de fundo*/
+}
+
+
+
+/*Sobre breakpoints - São pontos de quebras com a relação das dimensões 
+e o tamanho da tela em que nosso site esta sendo exibido */
+
+/*entrando no site zup.com.br e mostrar no inspecionar mudando tamanho da tela*/
+
+/*Criando media query 480px*/
+
+@media (min-width: 480px){
+  .minhadiv{
+    grid-template-columns: repeat(2, 1fr);
+    /*repetindo duas colunas para 
+    quando passar dos 480px ficarem lado a lado*/
+
+  }
+}
+
+/*Criando media query 768px*/
+
+@media (min-width: 768px){
+  .minhadiv{
+    grid-template-columns: repeat(3, 1fr);
+   
+  }
+}
+
+/*Criando media query 1280px*/
+
+@media (min-width: 1024px){
+  .minhadiv{
+    grid-template-columns: repeat(6, 1fr);
+
+  }
+}
+
+
+
+

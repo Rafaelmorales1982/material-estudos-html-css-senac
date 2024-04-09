@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+}
+
+.minhadiv {
+    width: 100px;/*largura*/
+    height: 100px;/*altura*/
+    background-color: yellow;/*cor de fundo*/
+    /*
+    display: inline;coloca os dois elementos lado a lado não tem  tamanho da largura e altura (width) (height)
+    
+    display: inline-block;coloca os dois elementos lado a lado funciona tamanho da largura e altura (width) (height)
+ 
+    display: block; coloca os dois elementos lado a lado funciona tamanho da largura e altura (width) (height)
+    
+    
+    */
+    
+
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Serve para inserir dados (Exemplo quando vc entra em um sistema para fazer login (exemplo facebook) inserindo no input)-->
+    <form action="./index.html"><!--onde vamos enviar o nosso form-->
+        <!--Especie de título para o nosso input--><!--id e o for tem que ser o mesmo ao clicar na label ele seleciona ao input-->
+        <label for="email">E-mail</label>
+        <!--Serve para inserir dados para nossa aplicação-->
+        <!--Atributo style="" ele deixa cada input um em baixo do outro-->
+        <!--Atributo serve para comunicar com for da label ou para estilizar no css-->
+        <!--Atributo type="" serve para indicar o tipo do campo do input-->
+        <!--Atributo name ="" sempre colocar no mesmo nome do id  ou qualquer nome-->
+        <!--Atributo placeholder="" coloca uma informação no campo do input ao digitar no campo ele some-->
+        <!--Atributo disabled serve para desativar o campo do input-->
+        <input style="display: block;" id="email" type="email" name="email"  placeholder="coloque um email válido" >
+
+        <!-------Campo Senha------------------------------>
+        <label for="password">Senha</label>
+        <input style="display: block;"   id="password" type="password" name="password">
+
+
+        <!-------Campo Texto------------------------------>
+        <label for="text">Texto</label>
+        <input style="display: block;"   id="text" type="text" name="text">
+
+         <!-------Campo Checkbox------------------------------>
+         <label for="checkbox">Checkbox</label>
+         <input style="display: block;"   id="checkbox" type="checkbox" name="checkbox">
+
+            <!-------Campo Checkbox------------------------------>
+            <label for="radio">Masculino</label>
+            <input style="display: block;"   id="radio" type="radio" name="sexo" value="masculino">
+
+             <!-------Campo Checkbox------------------------------>
+             <label for="radio">Feminino</label>
+             <input style="display: block;"   id="radio" type="radio" name="sexo" value="feminino">
+
+             <!-------Campo Checkbox------------------------------>
+             <label for="radio">Outro</label>
+             <input style="display: block;"   id="radio" type="radio" name="sexo" value="outro">
+
+             <!-------Campo Range------------------------------>
+             <label for="range">Range</label> <!-- setar um valor pelo nível--><!--pode ser utilizado como uma pesquisa-->
+             <!--pesquisa de sastifação de um site -(Arraste a barra conforme a sua satisfação )-->
+             <input style="display: block;"   id="range" type="range" name="range">
+
+              <!-------Campo Number----------------------------->
+              <label for="number">Número</label>
+              <input style="display: block;"   id="number" type="number" name="number">
+
+                <!-------Campo Arquivo----------------------------->
+                <label for="file">Arquivo</label>
+                <input style="display: block;"   id="file" type="file" name="file">
+
+                  <!-------Campo Data----------------------------->
+              <label for="date">Data</label>
+              <input style="display: block;"   id="date" type="date" name="date">
+
+        <!-------Campo select apenas escolher apenas um valor no select importante value ele que vai ser enviado pelo parâmetro----->
+        <select style="display: block;" name="dia da semana">
+        
+            <option value="domingo">Domingo</option>
+        <option value="domingo">Segund-Feira</option>
+        <option value="domingo">Terça-Feira</option>
+        <option value="domingo">Quarta-Feira</option>
+        <option value="domingo">Quinta-Feira</option>
+        <option value="domingo">Sexta-Feira</option>
+        <option value="domingo">Sábado</option>
+
+        </select>
+
+        <textarea style="display: block;" name="mensagem" id="mensagem" cols="30" rows="10">
+        </textarea>
+
+        <button>Enviar</button>
+ 
+
+
+    </form>
+
+
+</body>
+</html>

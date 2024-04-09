@@ -1,0 +1,64 @@
+* {
+  margin: 0; /*reseta a margin*/
+}
+
+.minhadiv {
+  /*div pai*/
+  width: 300px; /*largura*/
+  height: 300px; /*Altura*/
+  background-color: black; /*Cor de fundo*/
+
+  /*utilizando @keyframes*/
+  animation: animacao; /*chamando a keyframe criada*/
+  animation-duration: 5s; /*duração da animação*/
+
+  position: absolute;/*colocando por ultimo*/
+}
+
+/*
+"Position absolute" é um termo utilizado em desenvolvimento web
+ para descrever um posicionamento de um elemento HTML em relação ao seu contêiner pai.
+  Quando um elemento tem sua posição definida como "absolute",
+   ele é removido do fluxo normal do documento e posicionado em relação ao seu ancestral 
+   mais próximo que possui uma posição relativa, ou seja, ele é posicionado com base nas 
+   coordenadas especificadas (geralmente top, right, bottom e left). Se nenhum ancestral
+    com posição relativa for encontrado, o elemento será posicionado em relação ao documento
+    inteiro. Isso é útil para criar layouts complexos e sobreposições de elementos.
+*/
+
+
+/*Criando keyframe*/
+@keyframes animacao {
+    /*onde essa animação vai partir ou seja começar */
+  from {
+    border-radius: 0;
+    background-color:black ;/*colocando cor de fundo para iniciar animação*/
+  } 
+
+  /*onde essa animação vai chegar*/
+  to {
+    border-radius: 50%;
+    background-color: red;/*colocando cor fundo para animação ficar vermelha*/
+  } 
+
+/*posso trabalhar com porcentagens para criar animações*/
+
+  0%{
+    top: 0;
+  }
+
+  40%{
+    top: 40px;
+    left: 20px;
+  }
+
+  50% {
+    top: 60px;
+    left: 40px;
+  }
+
+  100%{
+    top: 350px;
+    left: 500px;
+  }
+}

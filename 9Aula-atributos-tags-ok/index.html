@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos e tags</title>
+</head>
+<body>
+
+    <!-- Atributo servem principalmente para personalizar e adicionar funcionalidades a uma tag HTML -->
+    <!-- Existem diversos atributos para tags e muitas tags tem seus próprios atributos. -->
+
+    <!--
+    Class=""  Atribui uma classe ao elemento (uma classe pode ser utilizada para um ou mais elementos);
+    id=""  Atribui um id ao elemento (um id deve ser único, ou seja atribuído a um único elemento);
+    style=""  Permite incluir elemento css (estilos) dentro da tag;
+    lang="" Define o idioma principal do elemento;
+    title="" Define o título do elemento;
+    alt="" Define um texto alternativo e, por isso, é muito utilizado em imagens;
+    hidden - Oculta o elemento;
+
+    ESSES ATRIBUTOS VÃO SER UTILIZADOS NO CSS
+    align=""  -Permite Definir o padrão de alinhamento desse elemento como por exemplo: right, center, left e justify;
+    width="" - Define uma largura para o elemento;
+    height="" - Define uma altura para o elemento;
+
+    -->
+    <!-- Serve para dividir o contéudo-->
+    <!--Uma tag genérica para divisão de seções do nosso documento HTML-->
+    <div class="primeira" style="background-color:red ; text-align: center;" lang="pt-br"  title="div" alt="texto alternativo"
+      > <!--Colocando um nome para tag div explicar no css-->
+
+        <p >Sobre atributos</p>
+
+    </div>
+
+    <div class="primeira"  style="background-color: aqua;"> <!--podemos ter a mesma classe em nosso html assim estiliza as duas economizando código e tempo-->
+
+        <p hidden>Atributos</p>
+    </div>
+
+    <div id="vermelho"> <!-- mesma coisa da div mas ele apenas utlizada apenas uma vez, esse nome vermelho não pode ser utilizado novamente-->
+                        <!--id é utilizado em casos mais expecífico e quando for utilizado em númeras vezes é utilizada class-->
+    </div>
+
+</body>
+</html>

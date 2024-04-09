@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+}
+
+body {
+    height: 300vh;/*1°  indicando 100% da altura da tela não preciso dizer a quantidade de pixel*/
+   /* 2° height: 200vh;mostra o scroll do lado porque altura ficou maior 2x 100% */
+   width: 100vh;/*3° indicando 100% da largura da tela não preciso dizer a quantidade de pixel*/
+}
+/*sem hover*/
+.minhadiv {
+    width: 500px;
+    height: 500px;
+    
+    background-color: gray;/*red white yellow green gray blue  violet */
+  /*3° transição por tempo*/
+  transition: 2s;
+}
+
+/*Pseudo classe hover- >quando passar o mouse por cima
+ do elemento para acionar
+troca de cor ou tamanho do elemento*/
+
+.minhadiv:hover {
+    width: 500px;/*2° podemos mudar tamanho 1000px*/
+    height: 500px;/*podemos mudar tamanho 1000px*/
+    /*1°*/
+    background-color: red;/*red white yellow green gray blue  violet */
+ 
+}
+/*sem pseud classe disable*/
+.input {
+    border: 3px solid black;
+}
+
+/*com pseudo classe disable*/
+.input:disabled {
+    border: 6px solid red;
+}
+
+
+/*pseudo elementos antes do input */
+/*pseudo elemento é criado direto no css e o pseudo classe interage
+ com as tags ou seja que já existe*/
+
+ /*antes da tag p*/
+ .nome::before {
+    content: 'Rafael ';
+    color: blue;
+ }
+
+ /*depois da tag*/
+ .sobrenome::after {
+    content: ' Morales';
+    color: red;
+ }
+

@@ -1,0 +1,43 @@
+* {
+  margin: 0; /*reseta a margin*/
+}
+
+.minhadiv {
+  /*div pai*/
+  width: 100px; /*largura*/
+  height: 100px; /*Altura*/
+  background-color: black; /*Cor de fundo*/
+
+}
+/*Sobre breakpoints - São pontos de quebras com a relação das dimensões 
+e o tamanho da tela em que nosso site esta sendo exibido */
+
+/*entrando no site zup.com.br e mostrar no inspecionar mudando tamanho da tela*/
+
+/*Criando media query 480px*/
+
+@media (min-width: 480px){
+  .minhadiv{
+    background-color: red;
+  }
+}
+
+/*Criando media query 768px*/
+
+@media (min-width: 768px){
+  .minhadiv{
+    background-color: yellow;
+  }
+}
+
+/*Criando media query 1280px*/
+
+@media (min-width: 1280px){
+  .minhadiv{
+    background-color: green;
+  }
+}
+
+
+
+
